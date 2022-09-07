@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Noto Sans', sans-serif;
+}
+.flex-turismo {
+     background: #122A57;
+     display: flex;
+     color: white;
+     padding: 15px 80px;
+     justify-content: space-between;
+}
+.menu {
+     display: flex;
+     align-items: center;
+     padding: 0;
+     /* anotação: o ul possuí padding por padrão*/
+}
+.menu li {
+     flex: 1 1 auto;
+     margin: 0 10px;
+}
+.link-menu {
+     text-decoration: none;
+     color: white;
+}
+.link-menu:hover {
+     text-decoration: underline;
+}
+.informacoes-flex-turismo {
+     display: flex;
+     margin: auto;
+     width: 80vw;
+}
+.teste {
+     align-items: center;
+}
+.apresentacao-flexturismo {
+     flex: 1;
+     color: #122A57;
+}
+.apresentacao-flexturismo h2 {
+     border-left: 3px solid #122A57;
+     padding-left: 10px;
+}
+.servicos {
+     display: flex;
+     flex-direction: column;
+     background: #122A57;
+     align-items: center;
+     color: white;
+     height: 500px;
+     justify-content: space-evenly;
+}
+.servicos-disponiveis {
+     display: flex;
+}
+.posicao-alinhada {
+     width: 80%;
+     margin: auto;
+     display: flex;
+}
+.posicao-alinhada h2 {
+     margin: 0;
+}
+.item-servico {
+     flex: 1;
+     text-align: center;
+}
+
+.comprar-agora {
+     background-color: white !important;
+     color: #122A57 !important;
+     font-weight: 800;
+     padding-top: 5px !important;
+     padding-bottom: 5px !important;
+}
+.comprar-agora:hover {
+     background-color: rgba(255, 255, 255, 0.438) !important;
+}
+.desenvolvimento {
+     background-color: #122A57;
+     color: white;
+     margin: 0;
+}
+.planos {
+     display: block !important;
+     padding: 50px 0;
+     align-items: center;
+}
+
+.informacoes-planos {
+     display: flex;
+     align-items: flex-end;
+     justify-content: space-around;
+}
+.subt-tit {
+     font-size: 2em;
+}
+.planos-personalizados {
+     border: 3px solid #122A57;
+     padding: 17px 30px;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+}
+.planos-personalizados ul {
+     border-top: 2px solid #122A57; 
+     padding: 50px 10px;
+     list-style-type: square;
+}
+.link-plano {
+     text-decoration: none;
+     background-color: #122A57;
+     color: white;
+     padding: 12.5px 30px;
+     border-radius: 50px;
+     transition: 0.5s;
+}
+.link-plano:hover {
+     background-color: #122a577a;
+     color:#122A57;
+}
+footer {
+     margin: 0;
+     padding: 25px 50px 10px 50px;
+     display: flex;
+     justify-content: space-between;
+}
+.desenvolvimento p{
+     margin: 0;
+     /* ative e desative essa class */
+     /* A margem do parágrafo interfere  */
+}
+@media (max-width: 1040px) {
+     .img {
+          width: 400px;
+     }
+}
+@media (max-width: 641px) {
+     .img {
+          width: 320px;
+     }
+}
+@media (max-width: 755px) {
+     .flex-turismo {
+          align-items: center;
+     }
+     .informacoes-flex-turismo {
+          width: 95vw !important;
+     }
+     .menu {
+          flex-direction: column;
+          justify-content: space-between;
+     }
+     .menu li {
+          margin-bottom: 10px;
+     }
+     .servicos {
+          height: auto;
+          padding: 50px 0;
+     }
+     .servicos-disponiveis {
+          flex-wrap: wrap;
+          margin: 7px 0;
+     }
+}
+@media (max-width: 555px) {
+     .flex-turismo {
+          padding: 15px 40px;
+     }
+     .informacoes-flex-turismo {
+          flex-direction: column;
+          max-width: 75%;
+     }
+     .mq2 {
+          flex-direction: column-reverse;
+     }
+     .img:nth-child(1) {
+          margin-top: 10px;
+     }
+     .apresentacao-flexturismo {
+          text-align: center;
+     }
+     .planos-personalizados:nth-child(1) {
+          padding: 17px 35px;
+     }
+}
+@media (max-width: 915px) {
+     .informacoes-planos {
+          flex-wrap: wrap;
+          align-items: stretch;
+     }
+     .planos-personalizados {
+          margin: 10px 0;     
+     }
+}
