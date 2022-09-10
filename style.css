@@ -76,6 +76,7 @@ body {
      font-weight: 800;
      padding-top: 5px !important;
      padding-bottom: 5px !important;
+     
 }
 .comprar-agora:hover {
      background-color: rgba(255, 255, 255, 0.438) !important;
@@ -100,6 +101,7 @@ body {
      font-size: 2em;
 }
 .planos-personalizados {
+     position: relative;
      border: 3px solid #122A57;
      padding: 17px 30px;
      display: flex;
@@ -119,6 +121,10 @@ body {
      padding: 12.5px 30px;
      border-radius: 50px;
      transition: 0.5s;
+}
+.botao-alinhado {
+     position: absolute !important;
+     bottom: 10px !important;
 }
 .link-plano:hover {
      background-color: #122a577a;
@@ -185,8 +191,8 @@ footer {
      .apresentacao-flexturismo {
           text-align: center;
      }
-     .planos-personalizados:nth-child(1) {
-          padding: 17px 35px;
+     .planos-personalizados {
+          flex-basis: 50%;
      }
 }
 @media (max-width: 915px) {
